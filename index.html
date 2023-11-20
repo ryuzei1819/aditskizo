@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <head>
+    <style>
+        #jam {
+            font-size: 2em;
+            font-weight: bold;
+            color: yellow; /* Warna kuning */
+        }
+  <style>
+        /* Menambahkan gaya lingkaran */
+        .lingkaran {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 50%; /* Untuk membuatnya menjadi lingkaran */
+            position: relative;
+            animation: gerakLingkaran 4s linear infinite; /* Animasi */
+        }
+
+        /* Animasi bergerak */
+        @keyframes gerakLingkaran {
+            0% { left: 0; }
+            50% { left: 50%; }
+            100% { left: 0; }
+        }
+    </style>
+</head>
+ <style>
+        #jam {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="jam"></div>
+
+    <script>
+        function perbaruiJam() {
+            const jamElement = document.getElementById("jam");
+            const waktuSekarang = new Date();
+            const jam = waktuSekarang.getHours().toString().padStart(2, '0');
+            const menit = waktuSekarang.getMinutes().toString().padStart(2, '0');
+            const detik = waktuSekarang.getSeconds().toString().padStart(2, '0');
+            const waktu = `${jam}:${menit}:${detik}`;
+            jamElement.textContent = waktu;
+        }
+
+        setInterval(perbaruiJam, 1000); // Perbarui setiap 1 detik
+        perbaruiJam(); // Panggil pertama kali
+    </script>
+</body>
+    <div class="lingkaran"></div>
+    <title>Biodata</title>
+  <head>
+  <body>
+    <p>Ini teks dengan warna merah.</p>
+</body>
+    <h1>Biodata</h1>
+    <p style="color:yellow;"> Nama: ryu izuki</p>
+<p style="color:yellow;"> Usia: 17 tahun</p>
+<p style="color:yellow;"> Alamat: isekai, negeri alam baka</p>
+<p style="color:yellow;"> Email: kaizonursatya@gmail.com</p>
+<p style="color:yellow;"> Telepon: 0813-8241-5830</p>
+    <style>
+    body {
+        background-image: url('https://telegra.ph/file/c09634f4dd2ae90c9ca04.jpg'); /* Ganti 'https://telegra.ph/file/c09634f4dd2ae90c9ca04.jpg'dengan path gambar Anda */
+        background-size: cover; /* Untuk mengisi seluruh latar belakang */
+        background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar */
+    }
+<head>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        .bintang {
+            position: absolute;
+            background: white;
+            width: 2px;
+            height: 2px;
+            animation: jatuh 2s linear infinite;
+        }
+        @keyframes jatuh {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function buatBintang() {
+            const bintang = document.createElement('div');
+            bintang.className = 'bintang';
+            bintang.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(bintang);
+            setTimeout(() => {
+                document.body.removeChild(bintang);
+            }, 2000);
+        }
+
+        setInterval(buatBintang, 200); // Membuat bintang setiap 200ms
+    </script>
+</body>
+<div id="logo">
+    <img src="" alt="Logo Anda">
+</div>
+  </body>
+</html>
